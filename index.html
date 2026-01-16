@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indonesia Country</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS Anda -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="app-header">
+    <div class="header-left">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="assets/nkri-logo.svg" alt="Logo Indonesia" class="header-logo">
+        </div>
+        <!-- Teks Header -->
+        <div class="header-text">
+            <h1>Republic of Indonesia</h1>
+            <span class="subtitle">
+                Indonesia's National and Regional Borders
+            </span>
+        </div>
+    </div>
+</header>
+
+<!-- Map Container -->
+<div class="map-container">
+    <div id="map"></div>
+</div>
+
+<!--Basemap Switcher-->
+<div class="basemap-switcher">
+    <div class="basemap-thumb" id="osmThumb">
+        <img src="./assets/vector.jpg" />
+     </div>
+
+      <div class="basemap-thumb" id="esriThumb">
+        <img src="./assets/imagery.jpg" />
+    </div>
+ </div>
+
+
+<!-- Layer Panel -->
+<div class="layer-control" id="layerControl">
+    <div class="layer-control-header">
+        <span class="title">Layer</span>
+    </div>
+</div>
+
+<!-- Legend Panel -->
+<div class="legend-control" id="legendControl">
+    <div class="legend-control-header">
+        <span class="title">Legenda</span>
+    </div>
+    <div class="legend-control-body">
+        <div id="server-legend-content">
+            <div class="no-layers-msg">Legenda</div>
+        </div>
+    </div>
+</div>
+
+<!-- Toggle Buttons -->
+<div class="control-toggle-btn layer-toggle-btn" id="layerToggleBtn" title="Toggle Layers">
+    <i class="bi bi-layers"></i>
+</div>
+
+<div class="control-toggle-btn legend-toggle-btn"
+     id="legendToggleBtn"
+     title="Show/Hide Legend">
+    <i class="bi bi-info-square"></i>
+</div>
+
+
+<!-- Footer -->
+<footer class="app-footer">
+    <div class="footer-left">    
+        <a href="https://github.com/devjuhans" target="_blank">© 2026 Juhans / devjuhans</a>
+    </div>
+
+    <div class="footer-right">
+        <a href="https://juhans.my.id" target="_blank" title="Personal Website">
+            <i class="bi bi-globe-asia-australia"></i>
+        </a>
+
+
+        <a href="https://github.com/devjuhans" target="_blank" title="GitHub">
+            <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/juhans" target="_blank" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="mailto:juhans@tuta.io" title="Email">
+            <i class="bi bi-envelope"></i>
+        </a>
+        
+    </div>
+</footer>
+
+<!-- Leaflet -->
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+></script>
+
+<!-- Esri Leaflet -->
+<script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js"></script>
+
+<!-- Script -->
+<script src="script/map.js"></script>
+
+</body>
+</html>
