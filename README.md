@@ -1,7 +1,8 @@
 ## Maps Of Republic Indonesia
 A project that using Leaflet dan ArcGIS Services to build a map of the Republic of Indonesia. Data sourced from legal open data sources published by National Geospatial Agency.
 
-<img width="1908" height="913" alt="image" src="https://github.com/user-attachments/assets/189566da-a796-4726-bb85-82bc53cf535b" />
+<img width="1914" height="914" alt="image" src="https://github.com/user-attachments/assets/33639072-c2fb-4b6c-aedd-04bf7ea3bb60" />
+
 
 Contains information about Republic of Indonesia Boundaries from legal public data.
 
